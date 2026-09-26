@@ -160,6 +160,7 @@
             - [Network](oscnetwork/Network.md)
             - [Remote Opcodes](oscnetwork/Remote.md)
             - [Non-MIDI Devices](oscnetwork/nonMIDIdevices.md)
+            - [Bela Digital I/O](oscnetwork/bela.md)
         - Miscellaneous Opcodes
             - [Overview](miscopcodes.md)
             - [Testing](misc/testing.md)
