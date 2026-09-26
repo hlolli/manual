@@ -9,3 +9,4 @@ The opcodes that query information about files are:
 * [filesr](../opcodes/filesr.md)
 * [filevalid](../opcodes/filevalid.md)
 * [mp3len](../opcodes/mp3len.md)
+* [mp3sr](../opcodes/mp3sr.md)
