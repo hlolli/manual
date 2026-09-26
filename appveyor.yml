@@ -1,6 +1,9 @@
 # https://www.appveyor.com/docs/appveyor-yml
 
 install:
+  # Install the DocBook DTD and its XML catalog for local entity resolution.
+  - ps: Start-FileDownload 'https://www.oasis-open.org/docbook/xml/4.5/docbook-xml-4.5.zip'
+  - 7z x docbook-xml-4.5.zip -oC:\docbook-xml-4.5
   # Install DocBook XSL.
   - ps: Start-FileDownload 'https://github.com/docbook/xslt10-stylesheets/releases/download/release%2F1.79.2/docbook-xsl-nons-1.79.2.zip'
   - 7z x docbook-xsl-nons-1.79.2.zip -oC:\
@@ -13,6 +16,7 @@ install:
 
 build_script:
   - set XSL_BASE_PATH=C:/docbook-xsl-nons-1.79.2
+  - set XML_CATALOG_FILES=C:/docbook-xml-4.5/catalog.xml
   # Other make executables are in C:\cygwin64\bin and C:\msys64\usr\bin.
   - C:\cygwin\bin\make html-dist
 
