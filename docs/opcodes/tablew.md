@@ -85,6 +85,7 @@ At k-rate or a-rate, if a table number of &lt; 1 is given, or the table number p
 > <CsOptions>
 > </CsOptions>
 > <CsInstruments>
+> 0dbfs = 1
 > ft@global:i = ftgen(1, 0, 8, 2, 0)
 > instr 1
 >   ndx:i = 0
