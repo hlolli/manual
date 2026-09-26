@@ -15,8 +15,9 @@
 
   <refsect1>
     <title>Description</title>
-    <para>Plugin opcode in hdf5ops. This opcode is part of the plugin repository and has to be installed separately. 
-    The plugin repository can be found here: <ulink url="https://github.com/csound/plugins"><citetitle>https://github.com/csound/plugins</citetitle></ulink></para>
+    <para>This opcode requires the <literal>hdf5ops</literal> plugin and the HDF5 library.
+    The plugin source is in the <ulink url="https://github.com/csound/plugins/tree/develop/6.x/src/hdf5"><citetitle>Csound 6 plugin tree</citetitle></ulink>.
+    Install a plugin built for your Csound version. If Csound does not recognize the opcode, check that it has loaded the plugin.</para>
     <para>
       <emphasis>hdf5read</emphasis> reads <emphasis>N</emphasis> signals and arrays from a specified hdf5 file.
     </para>
@@ -46,6 +47,14 @@
 
   <refsect1>
     <title>Examples</title>
+    <para>Run <link linkend="hdf5write"><citetitle>hdf5write.csd</citetitle></link> first and let it finish.
+    It creates <filename>example.h5</filename> in the current working directory with the datasets
+    <literal>aArray</literal>, <literal>aVar</literal>, and <literal>kVar</literal>.
+    Then run <filename>hdf5read.csd</filename> from the same directory. No separate dataset download is needed.</para>
+    <programlisting>csound hdf5write.csd
+csound hdf5read.csd</programlisting>
+    <para>Keep the same <literal>sr</literal> and <literal>ksmps</literal> settings in both examples
+    so the audio and control signals play back at the rates used to write them.</para>
     <para>
       Here is a simple example of the hdf5read opcode. It uses the file <ulink url="examples/hdf5read.csd"><citetitle>hdf5read.csd</citetitle></ulink>.
 
