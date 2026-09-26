@@ -6,7 +6,7 @@
     <title>midion</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="midion2.html" title="midion2" />
@@ -39,19 +39,19 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm204933"></a>
+        <a id="id200146"></a>
         <h2>Description</h2>
         <p>
       Generates MIDI note messages at k-rate.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm204936"></a>
+        <a id="id200149"></a>
         <h2>Syntax</h2>
         <pre class="synopsis"><span class="command"><strong>midion</strong></span> kchn, knum, kvel</pre>
       </div>
       <div class="refsect1">
-        <a id="idm204940"></a>
+        <a id="id200153"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>kchn</em></span> -- MIDI channel number (1-16)
@@ -70,21 +70,21 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm204957"></a>
+        <a id="id200170"></a>
         <h2>Examples</h2>
         <p>
       Here is a simple example of the midion opcode. It uses the file <a class="ulink" href="examples/midion_simple.csd" target="_top"><em class="citetitle">midion_simple.csd</em></a>.
       </p>
         <div class="example">
-          <a id="idm204962"></a>
+          <a id="id200175"></a>
           <p class="title">
-            <strong>Example 605. Simple Example of the midion opcode.</strong>
+            <strong>Example 608. Simple Example of the midion opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <p>This example generates a minor chord over every note received on the MIDI input. It generates MIDI notes on csound's MIDI output, so be sure to connect something.</p>
             <div class="refsect1">
-              <a id="idm204970"></a>
+              <a id="id200183"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span> 
 <span class="nt">&lt;CsOptions&gt;</span> 
@@ -134,15 +134,15 @@
       Here is another example of the midion opcode. It uses the file <a class="ulink" href="examples/midion_scale.csd" target="_top"><em class="citetitle">midion_scale.csd</em></a>.
       </p>
         <div class="example">
-          <a id="idm205093"></a>
+          <a id="id200306"></a>
           <p class="title">
-            <strong>Example 606. Example of the midion opcode to generate random notes from a scale.</strong>
+            <strong>Example 609. Example of the midion opcode to generate random notes from a scale.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <p>This example generates random notes from a given scale for every note received on the MIDI input. It generates MIDI notes on csound's MIDI output, so be sure to connect something.</p>
             <div class="refsect1">
-              <a id="idm205101"></a>
+              <a id="id200314"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span> 
 <span class="nt">&lt;CsOptions&gt;</span> 
@@ -191,19 +191,16 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm205250"></a>
-        <h2>See Also</h2>
+        <a id="id200463"></a>
+        <h2>See also</h2>
         <p>
-      <a class="link" href="moscil.html" title="moscil"><em class="citetitle">moscil</em></a>,
-      <a class="link" href="midion2.html" title="midion2"><em class="citetitle">midion2</em></a>,
-      <a class="link" href="noteon.html" title="noteon"><em class="citetitle">noteon</em></a>,
-      <a class="link" href="noteoff.html" title="noteoff"><em class="citetitle">noteoff</em></a>,
-      <a class="link" href="noteondur.html" title="noteondur"><em class="citetitle">noteondur</em></a>,
-      <a class="link" href="noteondur2.html" title="noteondur2"><em class="citetitle">noteondur2</em></a>
-    </p>
+          <a class="link" href="MidiOnoff.html" title="Note-on/Note-off Output">
+            <em class="citetitle">Note-on/Note-off Output</em>
+          </a>
+        </p>
       </div>
       <div class="refsect1">
-        <a id="idm205265"></a>
+        <a id="id200468"></a>
         <h2>Credits</h2>
         <p>
       </p>

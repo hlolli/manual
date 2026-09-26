@@ -6,7 +6,7 @@
     <title>sterrain</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="statevar.html" title="statevar" />
@@ -39,20 +39,20 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm323456"></a>
+        <a id="id320768"></a>
         <h2>Description</h2>
         <p>
       A wave-terrain synthesis opcode using curves computed with the superformula (see <a class="ulink" href="https://en.wikipedia.org/wiki/Superformula" target="_top"><em class="citetitle">Wikipedia</em></a> for more information).
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm323461"></a>
+        <a id="id320773"></a>
         <h2>Syntax</h2>
         <pre class="synopsis">aout <span class="command"><strong>sterrain</strong></span> kamp, kcps, kx, ky, krx, kry, krot, ktab0, ktab1, km1, km2, kn1, kn2, kn3, ka, kb, kperiod
     </pre>
       </div>
       <div class="refsect1">
-        <a id="idm323465"></a>
+        <a id="id320777"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>ktabx, ktaby</em></span> -- The two tables that define the terrain - they can be changed at krate.
@@ -95,21 +95,21 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm323488"></a>
+        <a id="id320800"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the sterrain opcode wich shows the impact of letting kn1 running towards zero. It uses the file <a class="ulink" href="examples/sterrain.csd" target="_top"><em class="citetitle">sterrain.csd</em></a>.
 
       </p>
         <div class="example">
-          <a id="idm323493"></a>
+          <a id="id320805"></a>
           <p class="title">
-            <strong>Example 1007. Example of the sterrain opcode.</strong>
+            <strong>Example 1020. Example of the sterrain opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm323500"></a>
+              <a id="id320812"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -156,14 +156,14 @@
 
       </p>
         <div class="example">
-          <a id="idm323686"></a>
+          <a id="id320998"></a>
           <p class="title">
-            <strong>Example 1008. Another Example of the sterrain opcode showing overtone building</strong>
+            <strong>Example 1021. Another Example of the sterrain opcode showing overtone building</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm323693"></a>
+              <a id="id321005"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -209,15 +209,16 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm323912"></a>
+        <a id="id321224"></a>
         <h2>See Also</h2>
         <p>
-        <a class="link" href="wterrain.html" title="wterrain"><em class="citetitle">wterrain</em></a>,
-      </p>
-        <p> More information on this opcode: <a class="ulink" href="https://youtu.be/E75xakCueA8" target="_top"><em class="citetitle">https://youtu.be/E75xakCueA8</em></a>  , made by Christian Bacher </p>
+          <a class="link" href="SiggenWaveterr.html" title="Wave Terrain Synthesis">
+            <em class="citetitle">Wave Terrain Synthesis</em>
+          </a>
+        </p>
       </div>
       <div class="refsect1">
-        <a id="idm323920"></a>
+        <a id="id321229"></a>
         <h2>Credits</h2>
         <p>
       </p>

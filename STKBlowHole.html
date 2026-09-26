@@ -6,7 +6,7 @@
     <title>STKBlowHole</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="STKBlowBotl.html" title="STKBlowBotl" />
@@ -39,7 +39,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm324840"></a>
+        <a id="id322158"></a>
         <h2>Description</h2>
         <p>Plugin opcode in stkopd. This opcode is part of the plugin repository and has to be installed separately. 
     The plugin repository can be found here: <a class="ulink" href="https://github.com/csound/plugins" target="_top"><em class="citetitle">https://github.com/csound/plugins</em></a></p>
@@ -50,12 +50,12 @@
       As a result, both the tonehole and register hole will have variable influence on the playing frequency, which is dependent on the length of the air column. In addition, the highest playing freqeuency is limited by these fixed lengths.</p>
       </div>
       <div class="refsect1">
-        <a id="idm324847"></a>
+        <a id="id322165"></a>
         <h2>Syntax</h2>
         <pre class="synopsis">asignal <span class="command"><strong>STKBlowHole</strong></span> ifrequency, iamplitude, [kreed, kv1[, knoise, kv2[, khole, kv3[, kreg, kv4[, kbreath, kv5]]]]]</pre>
       </div>
       <div class="refsect1">
-        <a id="idm324851"></a>
+        <a id="id322169"></a>
         <h2>Initialization</h2>
         <p>
       <span class="emphasis"><em>ifrequency</em></span> -- Frequency of note played, in Hertz.
@@ -65,7 +65,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm324857"></a>
+        <a id="id322175"></a>
         <h2>Performance</h2>
         <p><span class="emphasis"><em>kreed</em></span> -- controller 2, stiffness of reed. Value range of kv1 is 0-127.</p>
         <p><span class="emphasis"><em>knoise</em></span> -- controller 4, gain of noise. Value range of kv2 is 0-127.</p>
@@ -74,7 +74,7 @@
         <p><span class="emphasis"><em>kbreath</em></span> -- controller 128, breath pressure. Value range of kv5 is 0-127.</p>
       </div>
       <div class="refsect1">
-        <a id="idm324869"></a>
+        <a id="id322187"></a>
         <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
           <table border="0" summary="Note: Notes">
             <tr>
@@ -100,20 +100,20 @@ The order of the controller pair is arbitrary, as long as they are after <span c
         </div>
       </div>
       <div class="refsect1">
-        <a id="idm324878"></a>
+        <a id="id322196"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the STKBlowHole opcode. It uses the file <a class="ulink" href="examples/STKBlowHole.csd" target="_top"><em class="citetitle">STKBlowHole.csd</em></a>.
      
       </p>
         <div class="example">
-          <a id="idm324883"></a>
+          <a id="id322201"></a>
           <p class="title">
-            <strong>Example 1013. Example of the STKBlowHole opcode.</strong>
+            <strong>Example 1026. Example of the STKBlowHole opcode.</strong>
           </p>
           <div class="example-contents">
             <div class="refsect1">
-              <a id="idm324885"></a>
+              <a id="id322203"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -156,7 +156,16 @@ The order of the controller pair is arbitrary, as long as they are after <span c
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm325042"></a>
+        <a id="id322360"></a>
+        <h2>See also</h2>
+        <p>
+          <a class="link" href="STKTop.html" title="STK Opcodes">
+            <em class="citetitle">STK Opcodes</em>
+          </a>
+        </p>
+      </div>
+      <div class="refsect1">
+        <a id="id322365"></a>
         <h2>Credits</h2>
         <p>
       </p>

@@ -6,7 +6,7 @@
     <title>vibrato</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="vibr.html" title="vibr" />
@@ -39,19 +39,19 @@
           </p>
       </div>
       <div class="refsect1">
-        <a id="idm375383"></a>
+        <a id="id372806"></a>
         <h2>Description</h2>
         <p>
       Generates a natural-sounding user-controllable vibrato.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm375386"></a>
+        <a id="id372809"></a>
         <h2>Syntax</h2>
         <pre class="synopsis">kout <span class="command"><strong>vibrato</strong></span> kAverageAmp, kAverageFreq, kRandAmountAmp, kRandAmountFreq, kAmpMinRate, kAmpMaxRate, kcpsMinRate, kcpsMaxRate, ifn [, iphs</pre>
       </div>
       <div class="refsect1">
-        <a id="idm375390"></a>
+        <a id="id372813"></a>
         <h2>Initialization</h2>
         <p>
       <span class="emphasis"><em>ifn</em></span> -- Number of vibrato table. It normally contains a sine or a triangle wave.
@@ -61,7 +61,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm375396"></a>
+        <a id="id372819"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>kAverageAmp</em></span> -- Average amplitude value of vibrato
@@ -95,20 +95,20 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm375423"></a>
+        <a id="id372846"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the vibrato opcode. It uses the file <a class="ulink" href="examples/vibrato.csd" target="_top"><em class="citetitle">vibrato.csd</em></a>.
       </p>
         <div class="example">
-          <a id="idm375428"></a>
+          <a id="id372851"></a>
           <p class="title">
-            <strong>Example 1184. Example of the vibrato opcode.</strong>
+            <strong>Example 1199. Example of the vibrato opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm375435"></a>
+              <a id="id372858"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -157,16 +157,16 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm375619"></a>
-        <h2>See Also</h2>
+        <a id="id373042"></a>
+        <h2>See also</h2>
         <p>
-      <a class="link" href="jitter.html" title="jitter"><em class="citetitle">jitter</em></a>, 
-      <a class="link" href="jitter2.html" title="jitter2"><em class="citetitle">jitter2</em></a>, 
-      <a class="link" href="vibr.html" title="vibr"><em class="citetitle">vibr</em></a>
-    </p>
+          <a class="link" href="SiggenBasic.html" title="Basic Oscillators">
+            <em class="citetitle">Basic Oscillators</em>
+          </a>
+        </p>
       </div>
       <div class="refsect1">
-        <a id="idm375628"></a>
+        <a id="id373047"></a>
         <h2>Credits</h2>
         <p>Author: Gabriel Maldonado</p>
         <p>New in Version 4.15</p>

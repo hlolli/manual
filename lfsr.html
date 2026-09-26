@@ -6,7 +6,7 @@
     <title>lfsr</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="lfo.html" title="lfo" />
@@ -39,7 +39,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm173709"></a>
+        <a id="id169106"></a>
         <h2>Description</h2>
         <p>
         Output is a series of pseudo-random positive integers. This is the technique
@@ -49,12 +49,12 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm173712"></a>
+        <a id="id169109"></a>
         <h2>Syntax</h2>
         <pre class="synopsis">knum <span class="command"><strong>lfsr</strong></span> ilen, iprob [, iseed]</pre>
       </div>
       <div class="refsect1">
-        <a id="idm173716"></a>
+        <a id="id169113"></a>
         <h2>Initialization</h2>
         <p>
       <span class="emphasis"><em>ilen</em></span> -- length of shift register, valid values are 1-31 (inclusive). The
@@ -72,27 +72,27 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm173724"></a>
+        <a id="id169121"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>knum</em></span> -- integer output
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm173728"></a>
+        <a id="id169125"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the lfsr opcode. It uses the file <a class="ulink" href="examples/lfsr.csd" target="_top"><em class="citetitle">lfsr.csd</em></a>.
       </p>
         <div class="example">
-          <a id="idm173733"></a>
+          <a id="id169130"></a>
           <p class="title">
-            <strong>Example 501. Example of the lfsr opcode.</strong>
+            <strong>Example 503. Example of the lfsr opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm173740"></a>
+              <a id="id169137"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -164,7 +164,13 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm174151"></a>
+        <a id="id169548"></a>
+        <h2>See also</h2>
+        <p><a class="link" href="SiggenNoise.html" title="Random (Noise) Generators"><em class="citetitle">Random (Noise) Generators</em></a>
+        </p>
+      </div>
+      <div class="refsect1">
+        <a id="id169553"></a>
         <h2>Credits</h2>
         <p>By: Dave Seidel 2020</p>
         <p>Based on code by Patrick Dowling in the Ornament &amp; Crime firmware.</p>

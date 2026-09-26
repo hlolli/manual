@@ -3,6 +3,10 @@
 -odac
 </CsOptions>
 <CsInstruments>
+; Requires the hdf5ops plugin for Csound 6.
+; First run hdf5write.csd and let it finish to create example.h5.
+; Run this example from the same working directory.
+; Keep sr and ksmps the same in both examples.
 nchnls = 2
 0dbfs = 1
 ksmps = 8

@@ -6,7 +6,7 @@
     <title>pvsdisp</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="pvsdiskin.html" title="pvsdiskin" />
@@ -39,7 +39,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm270698"></a>
+        <a id="id265374"></a>
         <h2>Description</h2>
         <p>
       This opcode will display a PVS signal fsig. It prints the frames every hopsize. Uses X11 or FLTK windows if enabled, else 
@@ -48,12 +48,12 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm270703"></a>
+        <a id="id265379"></a>
         <h2>Syntax</h2>
         <pre class="synopsis"><span class="command"><strong>pvsdisp</strong></span> fsig[, ibins, iwtflg] </pre>
       </div>
       <div class="refsect1">
-        <a id="idm270707"></a>
+        <a id="id265383"></a>
         <h2>Initialization</h2>
         <p>
       <span class="emphasis"><em>ibins</em></span> (optional, default=all bins) -- optionally, display only ibins bins. 
@@ -64,7 +64,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm270713"></a>
+        <a id="id265389"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>pvsdisp</em></span> -- displays the PVS signal frame-by-frame. 
@@ -77,20 +77,20 @@
 	</p>
       </div>
       <div class="refsect1">
-        <a id="idm270719"></a>
+        <a id="id265395"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the pvsdisp opcode. It uses the file <a class="ulink" href="examples/pvsdisp.csd" target="_top"><em class="citetitle">pvsdisp.csd</em></a>.
       </p>
         <div class="example">
-          <a id="idm270724"></a>
+          <a id="id265400"></a>
           <p class="title">
-            <strong>Example 827. Example of the pvsdisp opcode</strong>
+            <strong>Example 832. Example of the pvsdisp opcode</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm270731"></a>
+              <a id="id265407"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -129,18 +129,16 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm270821"></a>
-        <h2>See Also</h2>
+        <a id="id265497"></a>
+        <h2>See also</h2>
         <p>
-      <a class="link" href="pvsanal.html" title="pvsanal"><em class="citetitle">pvsanal</em></a>,
-      <a class="link" href="pvsynth.html" title="pvsynth"><em class="citetitle">pvsynth</em></a>,
-      <a class="link" href="dispfft.html" title="dispfft"><em class="citetitle">dispfft</em></a>,
-      <a class="link" href="print.html" title="print"><em class="citetitle">print</em></a>,
-      <a class="link" href="pvsadsyn.html" title="pvsadsyn"><em class="citetitle">pvsadsyn</em></a>
-    </p>
+          <a class="link" href="SpectralRealTime.html" title="Tools for Real-time Spectral Processing (pvs opcodes)">
+            <em class="citetitle">Tools for Real-time Spectral Processing (pvs opcodes)</em>
+          </a>
+        </p>
       </div>
       <div class="refsect1">
-        <a id="idm270834"></a>
+        <a id="id265502"></a>
         <h2>Credits</h2>
         <p> Author: Victor Lazzarini, 2006 </p>
       </div>

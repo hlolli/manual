@@ -6,7 +6,7 @@
     <title>setctrl</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="setcol.html" title="setcol" />
@@ -39,7 +39,7 @@
           </p>
       </div>
       <div class="refsect1">
-        <a id="idm303507"></a>
+        <a id="id301110"></a>
         <h2>Description</h2>
         <p>Plugin opcode in control.</p>
         <p>
@@ -47,12 +47,12 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm303512"></a>
+        <a id="id301115"></a>
         <h2>Syntax</h2>
         <pre class="synopsis"><span class="command"><strong>setctrl</strong></span> inum, ival, itype</pre>
       </div>
       <div class="refsect1">
-        <a id="idm303516"></a>
+        <a id="id301119"></a>
         <h2>Initialization</h2>
         <p>
       Note that this opcode is not available on Windows due to the implimentation of pipes on that system 
@@ -86,28 +86,28 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm303534"></a>
+        <a id="id301137"></a>
         <h2>Performance</h2>
         <p>
       Calling <span class="emphasis"><em>setctrl</em></span> will create a new slider on the screen. There is no theoretical limit to the number of sliders. Windows and TCL/TK use only integers for slider values, so the values may need rescaling. GUIs usually pass values at a fairly slow rate, so it may be advisable to pass the output of control through <span class="emphasis"><em>port</em></span>.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm303539"></a>
+        <a id="id301142"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the setctrl opcode. It uses the file <a class="ulink" href="examples/setctrl.csd" target="_top"><em class="citetitle">setctrl.csd</em></a>.
 
       </p>
         <div class="example">
-          <a id="idm303544"></a>
+          <a id="id301147"></a>
           <p class="title">
-            <strong>Example 958. Example of the setctrl opcode.</strong>
+            <strong>Example 970. Example of the setctrl opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm303551"></a>
+              <a id="id301154"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -174,14 +174,16 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm303695"></a>
-        <h2>See Also</h2>
+        <a id="id301298"></a>
+        <h2>See also</h2>
         <p>
-      <a class="link" href="control.html" title="control"><em class="citetitle">control</em></a>
-    </p>
+          <a class="link" href="ControlSensing.html" title="Sensing and Control">
+            <em class="citetitle">Sensing and Control: TCL/TK widgets</em>
+          </a>
+        </p>
       </div>
       <div class="refsect1">
-        <a id="idm303700"></a>
+        <a id="id301303"></a>
         <h2>Credits</h2>
         <p>
       </p>

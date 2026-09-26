@@ -6,7 +6,7 @@
     <title>vdivv</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="vdelayk.html" title="vdelayk" />
@@ -39,19 +39,19 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm372653"></a>
+        <a id="id370068"></a>
         <h2>Description</h2>
         <p>
       Performs division between two vectorial control signals
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm372656"></a>
+        <a id="id370071"></a>
         <h2>Syntax</h2>
         <pre class="synopsis"><span class="command"><strong>vdivv</strong></span>  ifn1, ifn2, kelements [, kdstoffset] [, ksrcoffset] [,kverbose]</pre>
       </div>
       <div class="refsect1">
-        <a id="idm372660"></a>
+        <a id="id370075"></a>
         <h2>Initialization</h2>
         <p>
       <span class="emphasis"><em>ifn1</em></span> - number of the table hosting the first vector to be processed
@@ -61,7 +61,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm372666"></a>
+        <a id="id370081"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>kelements</em></span> - number of elements of the two vectors
@@ -140,21 +140,21 @@ ielements  <span class="op">=</span>        20
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm372737"></a>
+        <a id="id370152"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the vdivv opcode. It uses the file <a class="ulink" href="examples/vdivv.csd" target="_top"><em class="citetitle">vdivv.csd</em></a>.
       
       </p>
         <div class="example">
-          <a id="idm372742"></a>
+          <a id="id370157"></a>
           <p class="title">
-            <strong>Example 1176. Example of the vdivv opcode.</strong>
+            <strong>Example 1191. Example of the vdivv opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm372749"></a>
+              <a id="id370164"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -228,7 +228,16 @@ ielements  <span class="op">=</span>        20
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm373092"></a>
+        <a id="id370507"></a>
+        <h2>See also</h2>
+        <p>
+          <a class="link" href="vectorialvectorial.html" title="Operations Between two Vectorial Signals">
+            <em class="citetitle">Operations Between two  Vectorial Signals</em>
+          </a>
+        </p>
+      </div>
+      <div class="refsect1">
+        <a id="id370512"></a>
         <h2>Credits</h2>
         <p>Written by Gabriel Maldonado. Optional arguments added by Andres Cabrera and Istvan Varga.</p>
         <p>New in Csound 5 (Previously available only on CsoundAV)</p>

@@ -6,7 +6,7 @@
     <title>return</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="resyn.html" title="resyn" />
@@ -39,7 +39,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm288802"></a>
+        <a id="id283689"></a>
         <h2>Description</h2>
         <p>
       Return will return a value from an instrument at i-time. The value of a global instrument (instrument 0) can be retrieved 
@@ -47,27 +47,27 @@ after compilation by the evalstr opcode. The retrieval of values returned by oth
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm288805"></a>
+        <a id="id283692"></a>
         <h2>Syntax</h2>
         <pre class="synopsis"><span class="command"><strong>return</strong></span> ival </pre>
       </div>
       <div class="refsect1">
-        <a id="idm288809"></a>
+        <a id="id283696"></a>
         <h2>Initialization</h2>
         <p>
       <span class="emphasis"><em><span class="quote">“<span class="quote">ival</span>”</span></em></span> --  a value to be returned by instrument.
 </p>
       </div>
       <div class="refsect1">
-        <a id="idm288814"></a>
+        <a id="id283701"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the return opcode in conjunction with evalcode:
       </p>
         <div class="example">
-          <a id="idm288817"></a>
+          <a id="id283704"></a>
           <p class="title">
-            <strong>Example 906. </strong>
+            <strong>Example 912. </strong>
           </p>
           <div class="example-contents">
             <p>   
@@ -84,7 +84,14 @@ ival <span class="op">evalstr</span> "return 2 + 2"
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm288822"></a>
+        <a id="id283709"></a>
+        <h2>See Also</h2>
+        <p>
+          <a class="link" href="StringsTop.html#stringmanipulate" title="String Manipulation Opcodes"><em class="citetitle"></em>String Manipulation Opcodes</a>
+        </p>
+      </div>
+      <div class="refsect1">
+        <a id="id283714"></a>
         <h2>Credits</h2>
         <p>Author: Victor Lazzarini, 2013 </p>
       </div>

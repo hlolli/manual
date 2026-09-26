@@ -6,7 +6,7 @@
     <title>hdf5write</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="hdf5read.html" title="hdf5read" />
@@ -39,55 +39,65 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm150348"></a>
+        <a id="id147137"></a>
         <h2>Description</h2>
-        <p>Plugin opcode in hdf5ops. This opcode is part of the plugin repository and has to be installed separately. 
-    The plugin repository can be found here: <a class="ulink" href="https://github.com/csound/plugins" target="_top"><em class="citetitle">https://github.com/csound/plugins</em></a></p>
+        <p>This opcode requires the <code class="literal">hdf5ops</code> plugin and the HDF5 library.
+    The plugin source is in the <a class="ulink" href="https://github.com/csound/plugins/tree/develop/6.x/src/hdf5" target="_top"><em class="citetitle">Csound 6 plugin tree</em></a>.
+    Install a plugin built for your Csound version. If Csound does not recognize the opcode, check that it has loaded the plugin.</p>
         <p>
       <span class="emphasis"><em>hdf5write</em></span> writes <span class="emphasis"><em>N</em></span> signals and arrays to a specified hdf5 file.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm150356"></a>
+        <a id="id147146"></a>
         <h2>Syntax</h2>
         <pre class="synopsis"><span class="command"><strong>hdf5write</strong></span> ifilename, xout1[, xout2, xout3, ..., xoutN]</pre>
       </div>
       <div class="refsect1">
-        <a id="idm150360"></a>
+        <a id="id147150"></a>
         <h2>Initialization</h2>
         <p>
       <span class="emphasis"><em>ifilename</em></span> -- the hdf5 file's name (in double-quotes). If the file does not exist it will be created.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm150364"></a>
+        <a id="id147154"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>xout1,... xoutN</em></span> -- signals or arrays to be written to the hdf5 file. This opcode accepts i-rate, k-rate, a-rate signals or i-rate, k-rate, a-rate arrays of any dimension. These signals or arrays are written to a dataset within the hdf5 file using the same variable name as in Csound. For example, if the Csound variable is called 'ksignal', then the name of the hdf5 dataset is 'ksignal'. Any number and multiple types of datasets may be written at a time.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm150368"></a>
+        <a id="id147158"></a>
         <h2>Examples</h2>
+        <p>This example creates <code class="filename">example.h5</code> in the current working directory.
+    It writes data without sending sound to an audio device and replaces any existing file with that name.
+    Let it finish, then run <a class="link" href="hdf5read.html" title="hdf5read"><em class="citetitle">hdf5read.csd</em></a>
+    from the same directory to hear the stored signals. Both examples require the <code class="literal">hdf5ops</code> plugin.</p>
         <p>
       Here is a simple example of the hdf5write opcode. It uses the file <a class="ulink" href="examples/hdf5write.csd" target="_top"><em class="citetitle">hdf5write.csd</em></a>.
 
       </p>
         <div class="example">
-          <a id="idm150373"></a>
+          <a id="id147168"></a>
           <p class="title">
-            <strong>Example 436. Example of the hdf5write opcode.</strong>
+            <strong>Example 440. Example of the hdf5write opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm150380"></a>
+              <a id="id147175"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
--odac
+<span class="c1">; Write example.h5 without opening an audio device.</span>
+-n -d
 <span class="nt">&lt;/CsOptions&gt;</span>
 <span class="nt">&lt;CsInstruments&gt;</span><span class="w">
+</span><span class="c1">; Requires the hdf5ops plugin for Csound 6.</span><span class="w">
+</span><span class="c1">; This replaces example.h5 in the current working directory.</span><span class="w">
+</span><span class="c1">; Let this run finish before starting hdf5read.csd in the same directory.</span><span class="w">
+</span><span class="c1">; Keep sr and ksmps the same in both examples.</span><span class="w">
 </span><span class="vg">nchnls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w">
 </span><span class="vg">0dbfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w">
 </span><span class="vg">ksmps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="w">
@@ -125,14 +135,16 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm150533"></a>
-        <h2>See Also</h2>
+        <a id="id147337"></a>
+        <h2>See also</h2>
         <p>
-      <a class="link" href="hdf5read.html" title="hdf5read"><em class="citetitle">hdf5read</em></a>
-    </p>
+          <a class="link" href="SigioTop.html#SigioFileIO" title="File Input and Output">
+            <em class="citetitle">File Input and Output</em>
+          </a>
+        </p>
       </div>
       <div class="refsect1">
-        <a id="idm150538"></a>
+        <a id="id147342"></a>
         <h2>Credits</h2>
         <p>
       </p>

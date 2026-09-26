@@ -1,8 +1,13 @@
 <CsoundSynthesizer>
 <CsOptions>
--odac
+; Write example.h5 without opening an audio device.
+-n -d
 </CsOptions>
 <CsInstruments>
+; Requires the hdf5ops plugin for Csound 6.
+; This replaces example.h5 in the current working directory.
+; Let this run finish before starting hdf5read.csd in the same directory.
+; Keep sr and ksmps the same in both examples.
 nchnls = 2
 0dbfs = 1
 ksmps = 8

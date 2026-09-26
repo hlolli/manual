@@ -6,7 +6,7 @@
     <title>slider32tablef</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="slider32table.html" title="slider32table" />
@@ -39,20 +39,20 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm312384"></a>
+        <a id="id309846"></a>
         <h2>Description</h2>
         <p>
       Stores a bank of 32 different MIDI control messages to a table, filtered before output.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm312387"></a>
+        <a id="id309849"></a>
         <h2>Syntax</h2>
         <pre class="synopsis">kflag <span class="command"><strong>slider32tablef</strong></span> ichan, ioutTable, ioffset, ictlnum1, imin1, imax1, \
       init1, ifn1, icutoff1, .... , ictlnum32, imin32, imax32, init32, ifn32, icutoff32</pre>
       </div>
       <div class="refsect1">
-        <a id="idm312391"></a>
+        <a id="id309853"></a>
         <h2>Initialization</h2>
         <p>
       <span class="emphasis"><em>ichan</em></span> -- MIDI channel (1-16)
@@ -83,7 +83,7 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm312411"></a>
+        <a id="id309873"></a>
         <h2>Performance</h2>
         <p>
       <span class="emphasis"><em>kflag</em></span> -- a flag that informs if any control-change message in the bank has been received. In this case <span class="emphasis"><em>kflag</em></span> is set to 1. Otherwise is set to zero.
@@ -125,20 +125,14 @@
         </div>
       </div>
       <div class="refsect1">
-        <a id="idm312456"></a>
+        <a id="id309918"></a>
         <h2>See Also</h2>
         <p>
-      <a class="link" href="slider16table.html" title="slider16table"><em class="citetitle">slider16</em></a>,
-      <a class="link" href="slider16tablef.html" title="slider16tablef"><em class="citetitle">slider16f</em></a>,
-      <a class="link" href="slider32table.html" title="slider32table"><em class="citetitle">slider32</em></a>,
-      <a class="link" href="slider64table.html" title="slider64table"><em class="citetitle">slider64</em></a>,
-      <a class="link" href="slider64tablef.html" title="slider64tablef"><em class="citetitle">slider64f</em></a>, 
-      <a class="link" href="slider8table.html" title="slider8table"><em class="citetitle">slider8</em></a>,
-      <a class="link" href="slider8tablef.html" title="slider8tablef"><em class="citetitle">slider8f</em></a>
+      <a class="link" href="MidiSlidrbk.html" title="Slider Banks"><em class="citetitle">Slider Banks</em></a>
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm312473"></a>
+        <a id="id309923"></a>
         <h2>Credits</h2>
         <p>
       </p>

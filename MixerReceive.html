@@ -6,7 +6,7 @@
     <title>MixerReceive</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="MixerSend.html" title="MixerSend" />
@@ -39,24 +39,24 @@
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm210048"></a>
-        <h2>Syntax</h2>
-        <pre class="synopsis">asignal <span class="command"><strong>MixerReceive</strong></span> ibuss, ichannel</pre>
-      </div>
-      <div class="refsect1">
-        <a id="idm210052"></a>
+        <a id="id205175"></a>
         <h2>Description</h2>
         <p>Receives an arate signal that has been mixed onto a channel of a buss.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm210055"></a>
+        <a id="id205178"></a>
+        <h2>Syntax</h2>
+        <pre class="synopsis">asignal <span class="command"><strong>MixerReceive</strong></span> ibuss, ichannel</pre>
+      </div>
+      <div class="refsect1">
+        <a id="id205182"></a>
         <h2>Initialization</h2>
         <p><span class="emphasis"><em>ibuss</em></span> -- The number of the buss, for example the number of the instrument receiving the signal.</p>
         <p><span class="emphasis"><em>ichannel</em></span> -- The number of the channel. Each buss has <code class="literal">nchnls</code> channels.</p>
       </div>
       <div class="refsect1">
-        <a id="idm210062"></a>
+        <a id="id205189"></a>
         <h2>Performance</h2>
         <p><span class="emphasis"><em>asignal</em></span> -- The signal that has been mixed onto the indicated channel of the buss.</p>
         <p>
@@ -67,7 +67,7 @@ However, an instrument may have any number of sends or receives. After the final
 </p>
       </div>
       <div class="refsect1">
-        <a id="idm210069"></a>
+        <a id="id205196"></a>
         <h2>Examples</h2>
         <pre class="programlisting">
 <span class="oblock">instr</span> 220 <span class="comment">; Master output</span>
@@ -102,13 +102,13 @@ However, an instrument may have any number of sends or receives. After the final
       Here is a complete example of the MixerReceive opcode. It uses the file <a class="ulink" href="examples/Mixer.csd" target="_top"><em class="citetitle">Mixer.csd</em></a>
       </p>
         <div class="example">
-          <a id="idm210109"></a>
+          <a id="id205236"></a>
           <p class="title">
-            <strong>Example 624. Complete example of the MixerReceive opcode.</strong>
+            <strong>Example 627. Complete example of the MixerReceive opcode.</strong>
           </p>
           <div class="example-contents">
             <div class="refsect1">
-              <a id="idm210111"></a>
+              <a id="id205238"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -171,7 +171,16 @@ However, an instrument may have any number of sends or receives. After the final
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm210381"></a>
+        <a id="id205508"></a>
+        <h2>See also</h2>
+        <p>
+          <a class="link" href="MixerOpcodes.html" title="Mixer Opcodes">
+            <em class="citetitle">Mixer Opcodes</em>
+          </a>
+        </p>
+      </div>
+      <div class="refsect1">
+        <a id="id205513"></a>
         <h2>Credits</h2>
         <p>Michael Gogins (gogins at pipeline dot com).</p>
       </div>

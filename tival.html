@@ -6,7 +6,7 @@
     <title>tival</title>
     <link rel="stylesheet" type="text/css" href="csound.css" />
     <link rel="stylesheet" type="text/css" href="syntax-highlighting.css" />
-    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="home" href="index.html" title="The Canonical Csound Reference Manual" />
     <link rel="up" href="OpcodesTop.html" title="Orchestra Opcodes and Operators" />
     <link rel="prev" href="timout.html" title="timout" />
@@ -39,39 +39,39 @@
            </p>
       </div>
       <div class="refsect1">
-        <a id="idm350701"></a>
+        <a id="id348455"></a>
         <h2>Syntax</h2>
         <pre class="synopsis">ir <span class="command"><strong>tival</strong></span></pre>
       </div>
       <div class="refsect1">
-        <a id="idm350705"></a>
+        <a id="id348459"></a>
         <h2>Description</h2>
         <p> 
       Puts the value of the instrument's internal <span class="quote">“<span class="quote">tie-in</span>”</span> flag into the named i-rate variable.
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm350709"></a>
+        <a id="id348463"></a>
         <h2>Initialization</h2>
         <p>
       Puts the value of the instrument's internal <span class="quote">“<span class="quote">tie-in</span>”</span> flag into the named i-rate variable. Assigns 1 if this note has been <span class="quote">“<span class="quote">tied</span>”</span> onto a previously held note (see <a class="link" href="i.html" title="i Statement (Instrument or Note Statement)"><em class="citetitle">i statement</em></a>); assigns 0 if no tie actually took place. (See also <a class="link" href="tigoto.html" title="tigoto"><em class="citetitle">tigoto</em></a>.)
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm350718"></a>
+        <a id="id348472"></a>
         <h2>Examples</h2>
         <p>
       Here is an example of the tival opcode. It uses the file <a class="ulink" href="examples/tival.csd" target="_top"><em class="citetitle">tival.csd</em></a>.
       </p>
         <div class="example">
-          <a id="idm350723"></a>
+          <a id="id348477"></a>
           <p class="title">
-            <strong>Example 1105. Example of the tival opcode.</strong>
+            <strong>Example 1120. Example of the tival opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm350730"></a>
+              <a id="id348484"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -123,19 +123,22 @@
           </div>
         </div>
         <p><br class="example-break" />
+      </p>
+        <p>
+      A musical examples featuring the tival opcode: <a class="ulink" href="examples/musical/TivalNstrnum_Yi.csd" target="_top"><em class="citetitle">TivalNstrnum_Yi.csd</em></a> by Steven Yi.
+    </p>
+        <p>
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm350957"></a>
-        <h2>See Also</h2>
+        <a id="id348714"></a>
+        <h2>See also</h2>
         <p>
-      <a class="link" href="assign.html" title="="><em class="citetitle">=</em></a>,
-      <a class="link" href="divz.html" title="divz"><em class="citetitle">divz</em></a>,
-      <a class="link" href="init.html" title="init"><em class="citetitle">init</em></a>
-      </p>
+          <a class="link" href="ControlReinitn.html" title="Initialization and Reinitialization">
+            <em class="citetitle">Initialization and Reinitialization</em>
+          </a>
+        </p>
         <p> More on this opcode: <a class="ulink" href="http://www.csoundjournal.com/2005fall/tiedNotes.html" target="_top"><em class="citetitle">http://www.csoundjournal.com/2005fall/tiedNotes.html</em></a>  , written by Steven Yi </p>
-        <p> 
-    </p>
       </div>
     </div>
     <div class="navfooter">
